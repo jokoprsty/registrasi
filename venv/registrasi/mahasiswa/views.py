@@ -1,9 +1,12 @@
 import imp
 from rest_framework import viewsets
-from .models import Mahasiswa, OrangTua
-from .serializers import MahasiswaSerializer, OrangTuaSerializer
+from .models import User, Mahasiswa, OrangTua
+from .serializers import UserSerializer,MahasiswaSerializer, OrangTuaSerializer
 # Create your views here.
 
+class UserView(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
 class MahasiswaView(viewsets.ModelViewSet):
     queryset = Mahasiswa.objects.all()
