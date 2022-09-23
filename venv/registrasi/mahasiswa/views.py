@@ -1,7 +1,9 @@
-import imp
 from rest_framework import viewsets
 from .models import User, Mahasiswa, OrangTua
 from .serializers import UserSerializer,MahasiswaSerializer, OrangTuaSerializer
+from rest_framework.decorators import action
+from rest_framework.response import Response
+
 # Create your views here.
 
 class UserView(viewsets.ModelViewSet):

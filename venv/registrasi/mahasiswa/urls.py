@@ -1,5 +1,5 @@
 from rest_framework import routers
-from .views import UserView,MahasiswaView
+from .views import UserView, MahasiswaView
 
 router = routers.SimpleRouter()
 router.register(r'users', UserView)
