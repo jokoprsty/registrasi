@@ -1,3 +1,4 @@
+import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { MahasiswaRoutingModule } from "./mahasiswa-routing.module";
 import { MahasiswaComponent } from "./mahasiswa/mahasiswa.component";
@@ -8,6 +9,7 @@ import { MahasiswaComponent } from "./mahasiswa/mahasiswa.component";
     ],
     imports: [
         MahasiswaRoutingModule,
+        CommonModule,
     ]
    
 })
