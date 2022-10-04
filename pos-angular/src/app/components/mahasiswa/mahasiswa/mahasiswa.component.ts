@@ -9,14 +9,13 @@ import { MahasiswaService } from 'src/app/services/mahasiswa/mahasiswa.service';
 })
 export class MahasiswaComponent implements OnInit {
 
-  public dataMahasiswa?: Mahasiswa;
+  dataMahasiswa?: Mahasiswa[];
 
   constructor(private mahasiswa: MahasiswaService) { }
 
   ngOnInit(): void {
     this.mahasiswa.getMahasiswa().subscribe(data => {
       this.dataMahasiswa = data;
-      console.log(this.dataMahasiswa);
     } 
     );
   }

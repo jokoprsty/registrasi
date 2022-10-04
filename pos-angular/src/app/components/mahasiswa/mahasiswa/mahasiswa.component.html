@@ -1,4 +1,14 @@
 <p>mahasiswaa works!</p>
-<ul >
-    <li *ngFor = "let mhs of dataMahasiswa"></li>
-</ul>
+
+<table>
+    <thead>
+        <th>Name</th>
+        <th>User</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let mahasiswa of dataMahasiswa">
+            <td>{{mahasiswa.name}}</td>
+            <td>{{mahasiswa.user}}</td>
+        </tr>
+    </tbody>
+</table>
